@@ -9,9 +9,9 @@ namespace P01_RawData
         public string Model { get; set; }
         public Engine Engine { get; set; }
         public Cargo Cargo { get; set; }
-        public List<Tyre> Tires  { get; set; }
+        public Tyre []  Tires  { get; set; }
 
-        public Car(string model, Engine engine, Cargo cargo, List<Tyre>tires)
+        public Car(string model, Engine engine, Cargo cargo,params Tyre[] tires)
         {
             this.Model = model;
             this.Engine = engine;
