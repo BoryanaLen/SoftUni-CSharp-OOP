@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace P01_RawData
 {
-    public class RawData
+    public class Program
     {
         static void Main(string[] args)
         {
