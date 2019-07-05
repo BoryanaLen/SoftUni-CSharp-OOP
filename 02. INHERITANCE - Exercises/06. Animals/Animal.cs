@@ -9,7 +9,22 @@ namespace Animals
     public class Animal
     {
         public string Name { get; set; }
-        public int Age { get; set; }
+
+        private int age;
+        public int Age
+        {
+            get { return this.age; }
+
+            private set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("Invalid input!");
+                }
+
+                age = value;
+            }
+        }
 
         private Gender Gender;
 
